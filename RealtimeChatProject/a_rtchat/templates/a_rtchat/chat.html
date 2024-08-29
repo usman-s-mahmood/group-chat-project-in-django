@@ -53,4 +53,16 @@
     </div>
 </wrapper>
 
+
+
+
 {% endblock content %}
+{% block javascript %}
+<script>
+    let scrollBottom = () => {
+        const container = document.getElementById('chat_container');
+        container.scrollTop = container.scrollHeight;
+    }
+    scrollBottom();
+</script>
+{% endblock javascript %}
